@@ -1,6 +1,6 @@
 # Gold Price Predictor
 
-> Machine learning regression model for gold price forecasting with historical trend analysis and feature engineering — built with Python and scikit-learn.
+> Machine learning regression model for gold price forecasting with historical trend analysis and feature engineering built with Python and scikit-learn.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
@@ -13,7 +13,7 @@
 
 This project builds a gold price prediction model using supervised machine learning on historical price data. The model explores the relationship between gold prices and correlated financial indicators (USD index, oil prices, S&P 500 returns), applies feature engineering to capture temporal patterns, and evaluates multiple regression approaches to find the best-performing predictor.
 
-The goal was to understand how macroeconomic signals influence commodity pricing — a real-world problem in quantitative finance.
+The goal was to understand how macroeconomic signals influence commodity pricing a real-world problem in quantitative finance.
 
 ---
 
@@ -25,7 +25,7 @@ The goal was to understand how macroeconomic signals influence commodity pricing
 
 **Pipeline:**
 1. Data cleaning and null handling
-2. Feature engineering — rolling averages (7-day, 30-day), price momentum, volatility measures
+2. Feature engineering rolling averages (7-day, 30-day), price momentum, volatility measures
 3. Train/test split with temporal awareness (no future data leakage)
 4. Model training and comparison
 5. Visualization of predictions vs. actual prices
@@ -36,10 +36,10 @@ The goal was to understand how macroeconomic signals influence commodity pricing
 
 | Model | Description |
 |---|---|
-| Linear Regression | Baseline — captures linear price trend |
+| Linear Regression | Baseline captures linear price trend |
 | Ridge Regression | L2 regularization to handle multicollinear features |
-| Random Forest | Ensemble — captures non-linear feature interactions |
-| Gradient Boosting | Best performer — sequential error correction |
+| Random Forest | Ensemble captures non-linear feature interactions |
+| Gradient Boosting | Best performer sequential error correction |
 
 ---
 
@@ -50,7 +50,7 @@ The goal was to understand how macroeconomic signals influence commodity pricing
 | Python 3.9+ | Core language |
 | pandas | Data loading, cleaning, feature engineering |
 | scikit-learn | Model training, evaluation, cross-validation |
-| matplotlib / seaborn | Visualizations — price trends, prediction plots |
+| matplotlib / seaborn | Visualizations price trends, prediction plots |
 | numpy | Numerical computations |
 
 ---
@@ -60,7 +60,7 @@ The goal was to understand how macroeconomic signals influence commodity pricing
 ```
 gold-price-predictor/
 ├── gold_price_data.csv     # Historical gold price dataset
-├── predictor.py            # Main ML pipeline — training and evaluation
+├── predictor.py            # Main ML pipeline training and evaluation
 ├── features.py             # Feature engineering functions
 ├── visualize.py            # Plotting predictions vs actuals
 ├── requirements.txt        # Python dependencies
